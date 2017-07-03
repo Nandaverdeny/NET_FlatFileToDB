@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/NET_FlatFileToDB/bin
+/NET_FlatFileToDB/obj/Debug
+/packages

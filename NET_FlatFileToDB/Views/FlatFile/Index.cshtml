@@ -1,0 +1,56 @@
+﻿@model List<NET_FlatFileToDB.Models.FlatFileViewModel>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>List Uploaded File</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            FileID
+        </th>
+        <th>
+            FileName
+        </th>
+        <th>
+            ContentType
+        </th>
+        <th>
+            ContentLength
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+           Name
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FileId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FileName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContentType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContentLength)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+
+    </tr>
+}
+
+</table>
