@@ -16,6 +16,8 @@ namespace NET_FlatFileToDB.DataContexts
 
         public DbSet<FlatFile> FlatFiles { get; set; }
         public DbSet<FlatFileWithData> FlatFilesWithData { get; set; }
+        public DbSet<UploadedData> UploadedDatas { get; set; }
+
 
     }
 }
