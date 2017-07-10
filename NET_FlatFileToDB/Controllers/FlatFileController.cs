@@ -274,7 +274,8 @@ namespace NET_FlatFileToDB.Controllers
                     {
                         SeparatorChar = separator,
                         FirstLineHasColumnNames = haveHeader,
-                        FileCultureName = "en-US" // default is the current culture
+                        FileCultureName = "en-US", // default is the current culture
+                        EnforceCsvColumnAttribute = !haveHeader
                     }).ToList();
 
                     // Insert to DB
